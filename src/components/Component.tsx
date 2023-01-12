@@ -1,11 +1,7 @@
 import { useMemo } from "react";
 
 class ReferenceProvider {
-  value: string;
-
-  constructor(value = "default") {
-    this.value = value;
-  }
+  constructor(private value = "default") {}
 
   get reference() {
     return this.value;
